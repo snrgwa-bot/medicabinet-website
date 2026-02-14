@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - MediCabinet</title>
+  <meta name="description" content="MediCabinet Privacy Policy - Learn how we handle your data.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">💊</span>
+        MediCabinet
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html" class="active">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="index.html#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PRIVACY POLICY -->
+  <div class="legal-page">
+    <div class="legal-container">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: February 14, 2026</p>
+
+      <div class="highlight-box">
+        <p><strong>Summary:</strong> MediCabinet is designed with privacy first. Your medication data stays on your device and your private iCloud account. We do not collect, store, or sell your personal information.</p>
+      </div>
+
+      <h2>1. Introduction</h2>
+      <p>MediCabinet ("we", "our", or "the app") is a personal medicine cabinet tracker for iOS. This Privacy Policy explains how MediCabinet handles your information when you use our application.</p>
+      <p>We are committed to protecting your privacy. MediCabinet is designed so that your personal health data remains under your control at all times.</p>
+
+      <h2>2. Information We Do Not Collect</h2>
+      <p>MediCabinet does <strong>not</strong>:</p>
+      <ul>
+        <li>Create user accounts or require registration</li>
+        <li>Collect your name, email, phone number, or other personal identifiers</li>
+        <li>Track your location</li>
+        <li>Use analytics or tracking SDKs</li>
+        <li>Display advertisements</li>
+        <li>Sell or share your data with third parties</li>
+        <li>Send your medication data to our servers (we have none)</li>
+      </ul>
+
+      <h2>3. Information Stored on Your Device</h2>
+      <p>The following data is stored locally on your device using Apple's standard storage mechanisms:</p>
+      <ul>
+        <li><strong>Medication records:</strong> Name, category, type, quantity, expiration date, storage location, and notes for each medication you add</li>
+        <li><strong>App preferences:</strong> Your settings, such as notification preferences, API toggles, cache settings, and default storage location</li>
+        <li><strong>Cached drug information:</strong> Search results from government health databases are cached locally to reduce network requests</li>
+        <li><strong>Terms acceptance record:</strong> A record that you accepted the terms, including timestamp, app version, and device model</li>
+      </ul>
+      <p>This data is stored using Apple's UserDefaults and is not accessible to other applications on your device.</p>
+
+      <h2>4. iCloud Synchronization</h2>
+      <p>If you have iCloud enabled on your device, MediCabinet may sync your medication data across your Apple devices using Apple's CloudKit service.</p>
+      <ul>
+        <li>Synced data is stored in your <strong>private iCloud database</strong>, accessible only to your Apple ID</li>
+        <li>We cannot access, read, or modify your iCloud data</li>
+        <li>iCloud synchronization is subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a></li>
+        <li>You can disable iCloud sync through your device's iCloud settings</li>
+      </ul>
+
+      <h2>5. Government Health Database Queries</h2>
+      <p>When you search for drug information, MediCabinet sends search queries to the following free, public U.S. government APIs:</p>
+      <ul>
+        <li><strong>openFDA</strong> (api.fda.gov) - U.S. Food & Drug Administration</li>
+        <li><strong>RxNorm</strong> (rxnav.nlm.nih.gov) - National Library of Medicine</li>
+        <li><strong>DailyMed</strong> (dailymed.nlm.nih.gov) - National Library of Medicine</li>
+      </ul>
+      <p>These requests contain only the drug name you search for. No personal information, device identifiers, or medication records are sent with these requests.</p>
+      <p>These government services have their own privacy policies. We encourage you to review them:</p>
+      <ul>
+        <li><a href="https://open.fda.gov/terms/" target="_blank">openFDA Terms of Service</a></li>
+        <li><a href="https://www.nlm.nih.gov/privacy.html" target="_blank">NLM Privacy Policy</a></li>
+      </ul>
+
+      <h2>6. Apple Health (HealthKit)</h2>
+      <p>MediCabinet may request access to Apple Health data to help track your medications. This integration is:</p>
+      <ul>
+        <li><strong>Optional</strong> - You choose whether to grant access</li>
+        <li><strong>Controlled by you</strong> - You can revoke access at any time in Settings > Health > MediCabinet</li>
+        <li><strong>Private</strong> - Health data is never sent to external servers or shared with third parties</li>
+      </ul>
+
+      <h2>7. Notifications</h2>
+      <p>MediCabinet uses local push notifications to alert you about medication expirations. These notifications are:</p>
+      <ul>
+        <li>Generated and scheduled entirely on your device</li>
+        <li>Not sent through external servers</li>
+        <li>Optional - you can disable them in the app settings or iOS system settings</li>
+      </ul>
+
+      <h2>8. Children's Privacy</h2>
+      <p>MediCabinet is not directed at children under the age of 13. We do not knowingly collect information from children. If you are under 13, please use the app only with the guidance and consent of a parent or guardian.</p>
+
+      <h2>9. Data Retention and Deletion</h2>
+      <p>Since all data is stored on your device:</p>
+      <ul>
+        <li><strong>Deleting a medication</strong> removes it from your device and iCloud</li>
+        <li><strong>Clearing cache</strong> removes all cached drug information</li>
+        <li><strong>Uninstalling the app</strong> removes all local data from your device</li>
+        <li><strong>iCloud data</strong> can be managed through your iCloud settings</li>
+      </ul>
+
+      <h2>10. Security</h2>
+      <p>MediCabinet relies on Apple's built-in security mechanisms to protect your data:</p>
+      <ul>
+        <li>Device encryption (iOS data protection)</li>
+        <li>App sandboxing (data isolated from other apps)</li>
+        <li>iCloud encryption (data encrypted in transit and at rest)</li>
+        <li>HTTPS for all API communications</li>
+      </ul>
+
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated revision date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>12. Contact Us</h2>
+      <p>If you have questions about this Privacy Policy or how MediCabinet handles your data, please contact us:</p>
+      <p><strong>Email:</strong> <a href="mailto:snrgwa@gmail.com">snrgwa@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">💊</span>
+            MediCabinet
+          </div>
+          <p>Your personal medicine cabinet tracker. Organize medications, get expiration alerts, and access trusted drug information.</p>
+        </div>
+        <div class="footer-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="mailto:snrgwa@gmail.com">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MediCabinet. All rights reserved.</p>
+        <p>Made with care for your health.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

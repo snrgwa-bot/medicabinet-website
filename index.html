@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCabinet - Your Personal Medicine Cabinet Tracker</title>
+  <meta name="description" content="Track medications, vitamins, and supplements. Get expiration alerts, search drug databases, and sync across all your Apple devices.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">💊</span>
+        MediCabinet
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>&#9679;</span> Available on iOS
+        </div>
+        <h1>
+          Your Personal<br>
+          <span class="highlight">Medicine Cabinet</span><br>
+          Tracker
+        </h1>
+        <p>Track medications, vitamins, and supplements. Get expiration alerts and access trusted drug information from FDA, RxNorm, and DailyMed.</p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on App Store
+          </a>
+          <a href="#features" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <h3>My Cabinet</h3>
+              <p>6 medications tracked</p>
+            </div>
+            <div class="mock-med">
+              <div class="mock-med-icon status-good">💊</div>
+              <div class="mock-med-info">
+                <h4>Ibuprofen 200mg</h4>
+                <p>Expires Dec 2026</p>
+              </div>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="mock-med">
+              <div class="mock-med-icon status-warn">🧴</div>
+              <div class="mock-med-info">
+                <h4>Vitamin D3</h4>
+                <p>Expires May 2026</p>
+              </div>
+              <span class="dot dot-yellow"></span>
+            </div>
+            <div class="mock-med">
+              <div class="mock-med-icon status-soon">🌿</div>
+              <div class="mock-med-info">
+                <h4>Melatonin 5mg</h4>
+                <p>Expires in 15 days</p>
+              </div>
+              <span class="dot dot-orange"></span>
+            </div>
+            <div class="mock-med">
+              <div class="mock-med-icon status-expired">💉</div>
+              <div class="mock-med-info">
+                <h4>Benadryl</h4>
+                <p>Expired 3 days ago</p>
+              </div>
+              <span class="dot dot-red"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="section-header">
+      <p class="label">Features</p>
+      <h2>Everything You Need to Manage Your Medications</h2>
+      <p>A complete toolkit for tracking your medicine cabinet, with smart alerts and trusted health data.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <h3>Medicine Cabinet</h3>
+        <p>Add and organize all your medications, vitamins, supplements, and natural remedies in one place with detailed tracking.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏰</div>
+        <h3>Expiration Alerts</h3>
+        <p>Get notified 30 days, 7 days, 1 day before, and on the expiration date. Never use expired medicine again.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Drug Encyclopedia</h3>
+        <p>Search 70+ built-in medications and access real-time data from FDA, RxNorm, and DailyMed databases.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">☁️</div>
+        <h3>iCloud Sync</h3>
+        <p>Your medication data syncs automatically across all your Apple devices via iCloud. Always up to date.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏷️</div>
+        <h3>Smart Categories</h3>
+        <p>Organize by 14 categories including Pain Relief, Vitamins, Supplements, Herbal, Homeopathic, and more.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Private & Secure</h3>
+        <p>Your data stays on your device and your private iCloud. No accounts, no third-party tracking, no ads.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA SOURCES -->
+  <section class="sources">
+    <div class="section-header">
+      <p class="label">Trusted Data</p>
+      <h2>Powered by Government Health Databases</h2>
+      <p>Access comprehensive drug information from three trusted U.S. government sources.</p>
+    </div>
+    <div class="sources-grid">
+      <div class="source-card">
+        <div class="source-logo">🏛️</div>
+        <h3>openFDA</h3>
+        <p>Drug labels, warnings, adverse events, and NDC codes from the U.S. Food & Drug Administration.</p>
+      </div>
+      <div class="source-card">
+        <div class="source-logo">💊</div>
+        <h3>RxNorm</h3>
+        <p>Standardized drug names, interactions, and clinical identifiers from the National Library of Medicine.</p>
+      </div>
+      <div class="source-card">
+        <div class="source-logo">📋</div>
+        <h3>DailyMed</h3>
+        <p>Full package inserts and structured product labeling from the National Library of Medicine.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPIRATION STATUS -->
+  <section>
+    <div class="section-header">
+      <p class="label">At a Glance</p>
+      <h2>Color-Coded Expiration Status</h2>
+      <p>Instantly see which medications need attention with clear visual indicators.</p>
+    </div>
+    <div class="status-section">
+      <div class="status-grid">
+        <div class="status-card">
+          <div class="status-dot dot-green"></div>
+          <h4>Good</h4>
+          <p>More than 90 days until expiration</p>
+        </div>
+        <div class="status-card">
+          <div class="status-dot dot-yellow"></div>
+          <h4>Moderate</h4>
+          <p>31 to 90 days until expiration</p>
+        </div>
+        <div class="status-card">
+          <div class="status-dot dot-orange"></div>
+          <h4>Expiring Soon</h4>
+          <p>1 to 30 days until expiration</p>
+        </div>
+        <div class="status-card">
+          <div class="status-dot dot-red"></div>
+          <h4>Expired</h4>
+          <p>Past the expiration date</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="download">
+    <div class="cta-box">
+      <h2>Start Tracking Your Medications Today</h2>
+      <p>Download MediCabinet for free and take control of your medicine cabinet.</p>
+      <a href="#" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on App Store
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">💊</span>
+            MediCabinet
+          </div>
+          <p>Your personal medicine cabinet tracker. Organize medications, get expiration alerts, and access trusted drug information.</p>
+        </div>
+        <div class="footer-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="mailto:snrgwa@gmail.com">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MediCabinet. All rights reserved.</p>
+        <p>Made with care for your health.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

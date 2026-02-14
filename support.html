@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support - MediCabinet</title>
+  <meta name="description" content="MediCabinet Support - Get help with the app, find answers to FAQs, and contact us.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">💊</span>
+        MediCabinet
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="index.html#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SUPPORT PAGE -->
+  <div class="legal-page">
+    <div class="legal-container">
+      <h1>Support</h1>
+      <p class="last-updated">We're here to help you get the most out of MediCabinet.</p>
+
+      <!-- CONTACT CARDS -->
+      <div class="support-grid" style="margin-top: 2rem;">
+        <div class="support-card">
+          <div class="card-icon">&#9993;</div>
+          <h3>Email Support</h3>
+          <p>Have a question, bug report, or feature request? Send us an email and we'll get back to you as soon as possible.</p>
+          <a href="mailto:snrgwa@gmail.com" class="card-link">snrgwa@gmail.com &rarr;</a>
+        </div>
+        <div class="support-card">
+          <div class="card-icon">&#128196;</div>
+          <h3>App Guides</h3>
+          <p>First time using MediCabinet? The in-app onboarding guide walks you through setup, permissions, and key features.</p>
+          <span class="card-link" style="color: var(--text-muted);">Available inside the app</span>
+        </div>
+        <div class="support-card">
+          <div class="card-icon">&#128274;</div>
+          <h3>Privacy Concerns</h3>
+          <p>Questions about your data? MediCabinet stores everything locally on your device. Read our full privacy details.</p>
+          <a href="privacy.html" class="card-link">Read Privacy Policy &rarr;</a>
+        </div>
+        <div class="support-card">
+          <div class="card-icon">&#128220;</div>
+          <h3>Terms of Use</h3>
+          <p>Review the terms and conditions that govern your use of MediCabinet, including medical disclaimers.</p>
+          <a href="terms.html" class="card-link">Read Terms of Service &rarr;</a>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>How do I add a medication?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Open MediCabinet and tap the "+" button on the Cabinet tab. Enter the medication name, category, type, quantity, expiration date, and storage location. You can also add notes for any additional details. Tap "Save" to add it to your cabinet.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>How do expiration notifications work?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>When you add a medication with an expiration date, MediCabinet schedules local notifications at four intervals: 30 days before, 7 days before, 1 day before, and on the expiration day at 9:00 AM. You can enable or disable notifications in the app's Settings tab. Make sure notifications are also enabled in your iOS Settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Does MediCabinet sync across devices?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. If you have iCloud enabled on your Apple devices, MediCabinet automatically syncs your medication data across all devices signed in with the same Apple ID. Your data is stored in your private iCloud database, accessible only to you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Where does the drug information come from?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>MediCabinet pulls drug information from three trusted U.S. government sources: openFDA (FDA drug labels and adverse events), RxNorm (standardized drug names and interactions from the National Library of Medicine), and DailyMed (package inserts and product labeling). You can enable or disable each source individually in Settings.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Is my data private and secure?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. MediCabinet stores all your data locally on your device. If you use iCloud sync, your data is stored in your private iCloud database, encrypted by Apple. We have no servers, no user accounts, no analytics, and no ads. We cannot see or access your medication data. Read our full <a href="privacy.html">Privacy Policy</a> for details.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Can I use MediCabinet offline?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Your medicine cabinet works fully offline. Adding, editing, and viewing medications does not require an internet connection. The built-in drug encyclopedia with 70+ medications is also available offline. You only need internet access to search the government drug databases (openFDA, RxNorm, DailyMed) for additional information. Previously searched results are cached locally for offline access.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>How do I delete my data?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can delete individual medications by swiping left on them in the Cabinet tab. To clear all cached drug information, go to Settings and tap "Clear Cache." To remove all app data completely, uninstall MediCabinet from your device. If you use iCloud sync, you can manage your iCloud data through Settings > [Your Name] > iCloud on your device.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Is MediCabinet a substitute for medical advice?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>No. MediCabinet is an organizational and informational tool only. It does not provide medical advice, diagnoses, or treatment recommendations. Always consult your doctor, pharmacist, or other qualified healthcare professional for medical decisions. Do not rely solely on information from MediCabinet to make decisions about your health.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>What medication categories are supported?</span>
+            <span class="arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer">
+            <p>MediCabinet supports 14 categories: Pain Relief, Allergy, Digestive, Cold & Flu, Sleep, Vitamins, Supplements, First Aid, Skin Care, Herbal Tea, Herbal Supplement, Homeopathic, Aromatherapy, and Other. You can also classify medications by type: OTC (Over-the-Counter), Prescription, Supplement, Natural, Homeopathic, or Custom.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SYSTEM REQUIREMENTS -->
+      <h2 style="margin-top: 3rem;">System Requirements</h2>
+      <ul>
+        <li><strong>Device:</strong> iPhone or iPad</li>
+        <li><strong>Operating System:</strong> iOS 16.0 or later</li>
+        <li><strong>Storage:</strong> Approximately 20 MB</li>
+        <li><strong>Internet:</strong> Required only for drug database searches; offline use supported</li>
+        <li><strong>iCloud:</strong> Optional, for cross-device synchronization</li>
+      </ul>
+
+      <!-- CONTACT AGAIN -->
+      <h2 style="margin-top: 3rem;">Still Need Help?</h2>
+      <p>If you couldn't find what you're looking for, don't hesitate to reach out. We typically respond within 24-48 hours.</p>
+      <p style="margin-top: 1rem;">
+        <a href="mailto:snrgwa@gmail.com" class="btn-primary" style="display: inline-flex;">
+          Contact Support &rarr;
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">💊</span>
+            MediCabinet
+          </div>
+          <p>Your personal medicine cabinet tracker. Organize medications, get expiration alerts, and access trusted drug information.</p>
+        </div>
+        <div class="footer-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="mailto:snrgwa@gmail.com">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MediCabinet. All rights reserved.</p>
+        <p>Made with care for your health.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // FAQ accordion
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      const wasOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      // Toggle clicked
+      if (!wasOpen) {
+        item.classList.add('open');
+      }
+    }
+  </script>
+
+</body>
+</html>
