@@ -455,7 +455,7 @@ section {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .source-card .source-logo {
@@ -821,7 +821,7 @@ section {
 
   .features-grid,
   .sources-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .footer-grid {
@@ -862,7 +862,7 @@ section {
 
   .features-grid,
   .sources-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .status-grid {
